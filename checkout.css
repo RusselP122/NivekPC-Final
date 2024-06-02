@@ -1,0 +1,215 @@
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #262626;
+}
+
+.parent-container {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  height: 100vh; /* Full viewport height */
+}
+
+/* Existing container styles */
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  max-width: 1200px; /* Optional: limit the max width */
+}
+
+
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+.d-flex {
+  display: flex;
+  flex-direction: column;
+  background: #f6f6f6;
+  border-radius: 0 0 5px 5px;
+  padding: 25px;
+}
+
+@media (min-width: 768px) {
+  .d-flex {
+    flex-direction: row;
+  }
+}
+
+form {
+  flex: 4;
+}
+
+.Yorder {
+  flex: 2;
+  margin-top: 15px;
+}
+
+.title {
+  background: #331926;
+  border-radius: 5px 5px 0 0;
+  padding: 20px;
+  color: #f6f6f6;
+}
+
+h2 {
+  margin: 0;
+  padding-left: 15px;
+}
+
+.required {
+  color: red;
+}
+
+label, table {
+  display: block;
+  margin: 15px;
+}
+
+label > span {
+  float: left;
+  width: 100%;
+  margin-top: 12px;
+  padding-right: 10px;
+}
+
+input[type="text"], input[type="tel"], input[type="email"], select {
+  width: 100%;
+  height: 30px;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  border: 1px solid #dadada;
+  color: #888;
+}
+
+@media (min-width: 768px) {
+  label > span {
+    width: 25%;
+  }
+
+  input[type="text"], input[type="tel"], input[type="email"], select {
+    width: 70%;
+  }
+}
+
+select {
+  width: 100%;
+  height: 45px;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  select {
+    width: 72%;
+  }
+}
+
+.Yorder {
+  margin-top: 15px;
+  padding: 20px;
+  border: 1px solid #dadada;
+}
+
+.order-table {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  border-bottom: 1px solid #dadada;
+  padding: 10px 0;
+}
+
+tr > td:nth-child(1) {
+  text-align: left;
+  color: #2d2d2a;
+}
+
+tr > td:nth-child(2) {
+  text-align: right;
+  color: #52ad9c;
+}
+
+td {
+  border-bottom: 1px solid #dadada;
+  padding: 10px;
+}
+
+p {
+  display: block;
+  color: #888;
+  margin: 0;
+  padding-left: 25px;
+}
+
+.Yorder > div {
+  padding: 15px 0;
+}
+
+button {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 30px;
+  background: #52ad9c;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+button:hover {
+  cursor: pointer;
+  background: #428a7d;
+}
+
+#gcash_radio {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 767px) {
+  .title h2 {
+    font-size: 1.5em;
+    padding-left: 0;
+  }
+
+  label, table {
+    margin: 10px;
+  }
+
+  input[type="text"], input[type="tel"], input[type="email"], select {
+    width: 100%;
+  }
+
+  .order-table {
+    max-height: 200px;
+  }
+
+  td {
+    padding: 10px 5px;
+  }
+
+  th, td {
+    font-size: 0.9em;
+  }
+
+  button {
+    font-size: 14px;
+  }
+}
