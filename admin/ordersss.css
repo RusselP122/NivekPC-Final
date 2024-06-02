@@ -1,0 +1,230 @@
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Body */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1b203d;
+}
+
+/* Table */
+.main {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+tr {
+    border-bottom: 1px solid #eee; 
+}
+
+.head th {
+    font-weight: bold;
+    padding: 10px; 
+    text-align: left; 
+    background-color: #f2f2f2; 
+    color: black;
+      
+}
+
+/* Inputs */
+.form-check-input:focus {
+    border-color: #8bbafe;
+    outline: none;
+    box-shadow: none;
+}
+
+/* Buttons */
+.btn {
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 3px;
+    padding: 0 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+
+.btn:focus {
+    color: #fff;
+    outline: none;
+    box-shadow: none !important;
+}
+
+/* Order Color */
+.order-color {
+    color: blue;
+}
+
+/* Table Header */
+.head th {
+    font-weight: bold;
+    padding: 10px;
+    text-align: left; 
+    
+    }
+
+
+/* Table Body */
+.main tbody tr:nth-child(even) {
+    background-color: #f9f9f9; 
+}
+
+/* Inputs */
+.form-check-input:focus {
+    border-color: #8bbafe;
+    outline: none;
+    box-shadow: none;
+}
+
+/* Buttons */
+.btn {
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    background-color: #007bff; 
+    border: none;
+    border-radius: 3px;
+    padding: 0 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+.btn:focus {
+    color: #fff;
+    outline: none;
+    box-shadow: none !important;
+}
+
+/* Edit Button */
+.btn-edit {
+    background-color: #28a745; 
+    margin-right: 5px;
+}
+
+/* Delete Button */
+.btn-delete {
+    background-color: #dc3545; 
+    margin-right: 5px; 
+}
+
+
+/* CSS for Payment Status */
+.payment-status {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.payment-status-paid {
+    background-color: #008000 !important; 
+    color: white; 
+    padding: 2px 2px !important;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.payment-status-awaiting {
+    background-color: #ffa500 !important; 
+    color: white;
+    padding: 2px 2px !important;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.payment-status-failed {
+    background-color: #ff0000 !important; 
+    color: white;
+    padding: 2px 2px !important;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.payment-status-unpaid {
+    background-color: #ff0000 !important; 
+    color: white;
+    padding: 2px 2px !important;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+/*  color of Order Status in table */
+.order-status-processing {
+    background-color: #008000 !important; 
+    color: white;
+    padding: 2px 2px !important;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.order-status-delivered {
+    background-color: #00bfff !important; 
+    color: white;
+    padding: 2px 2px !important;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.order-status-cancelled {
+    background-color: #ff0000 !important; 
+    color: white;
+    padding: 2px 2px !important;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+
+.order-list-heading {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #6c7293
+}
+
+
+
+#editDateOrdered,
+#editPaymentStatus,
+#editPaymentMethod,
+#editOrderStatus {
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}

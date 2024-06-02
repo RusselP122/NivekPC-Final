@@ -1,0 +1,245 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1b203d;
+  overflow: hidden;
+  font-family: system-ui;
+  overflow-y: auto;
+}
+
+.product-heading {
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #6c7293;
+  text-align: center;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.logo {
+  margin: 0;
+  margin-left: 28px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.logo span {
+  color: #f7403b;
+}
+
+.sidenav {
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #1b203d;
+  overflow: hidden;
+  transition: 0.5s;
+  padding-top: 30px;
+}
+
+.sidenav a {
+  padding: 15px 8px 15px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+  background-color: #1b203d;
+}
+
+.sidenav {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+#main {
+  transition: margin-left 0.5s;
+  padding: 16px;
+  margin-left: 300px;
+}
+
+.head {
+  padding: 20px;
+}
+
+.col-div-6 {
+  width: 50%;
+  float: left;
+}
+
+.profile {
+  display: inline-block;
+  float: right;
+  width: 200px;
+}
+
+.pro-img {
+  float: left;
+  width: 40px;
+  margin-top: 8px;
+  margin-left: 20px;
+}
+
+.profile p {
+  color: #6c7293;
+  font-weight: 500;
+  margin-left: 35px;
+  margin-top: 10px;
+  font-size: 13.5px;
+  background-color: white;
+  padding: 5px;
+  border-radius: 25px;
+  padding-left: 35px;
+  cursor: pointer;
+}
+
+.dots {
+  margin-left: 10px;
+}
+
+.profile-div {
+  background-color: white;
+  width: 140px;
+  border: 1px solid #ddd;
+  padding: 10px 0px;
+  right: 2%;
+  border-radius: 5px;
+  position: absolute;
+  z-index: 9;
+  display: none;
+}
+
+
+
+.profile-div p {
+  margin: 0px;
+  padding: 10px 20px;
+}
+
+.profile-div p:hover {
+  margin: 0px;
+  padding: 10px 20px;
+  background-color: #5643ff;
+  border-radius: 0px;
+  color: white;
+}
+
+.nav2 {
+  display: none;
+}
+
+.table-container {
+  margin-top: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  overflow-x: auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 12px 8px;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.action-button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin-right: 5px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.action-button:hover {
+  background-color: #45a049;
+}
+
+td .action-button {
+  margin: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.product-img {
+  width: 100px;
+  height: auto;
+}
+
+.pagination\:container {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.arrow\:text {
+  display: block;
+  vertical-align: middle;
+  font-size: 13px;
+  vertical-align: middle;
+}
+
+.pagination\:number {
+  --size: 32px;
+  --margin: 6px;
+  margin: 0 var(--margin);
+  border-radius: 6px;
+  background: white;
+  max-width: auto;
+  min-width: var(--size);
+  height: var(--size);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0 6px;
+}
+
+@media (hover: hover) {
+  .pagination\:number:hover {
+      background: lighten(#202020, 3%);
+  }
+}
+
+.pagination\:number:active {
+  background: lighten(#202020, 3%);
+}
+
+.pagination\:active {
+  background: lighten(#202020, 3%);
+  position: relative;
+}
+
